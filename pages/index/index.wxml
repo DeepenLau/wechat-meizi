@@ -1,10 +1,20 @@
+
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
+<view class="container" bindtouchstart="touchstart" bindtouchend="touchend" bindtouchmove="touchmove">
+  <view bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
-  <view class="usermotto">
+  <navigator url="../test/test" class="usermotto">
     <text class="user-motto">{{motto}}</text>
+  </navigator>
+  <view class="slider-mask" hidden="{{ !style.show }}" bindtap="closeSlider"></view>
+  <view class="slider" style="left:{{style.left}}%">
+    <text>aaaaa</text>
+    <text>aaaaa</text>
+    <text>aaaaa</text>
+    <text>aaaaa</text>
+    <text>aaaaa</text>
+    <text>aaaaa</text>
   </view>
 </view>

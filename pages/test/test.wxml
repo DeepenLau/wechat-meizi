@@ -1,0 +1,18 @@
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:row;" bindtouchstart="touchstart" bindtouchend="touchend" bindtouchmove="touchmove">
+    <view wx:key="thumb_url" wx:for="{{meizi}}" wx:for-item="itemName" class="flex-item {{itemName.className}}">
+      <image mode="aspectFill" src="{{itemName.thumb_url}}" data-url="{{itemName.image_url}}" bindtap="previewImage">
+        <text class="text">{{itemName.title}}</text>
+      </image>
+      
+    </view>
+  </view>
+  <!--<view class="actionSheet" bindtap="showActionSheet">
+  </view>-->
+  <view class="nav-mask" hidden="{{ !style.show }}" bindtap="closeNav"></view>
+  <view class="nav" style="left:{{style.left}}%" catchtap="closeNav">
+    <text wx:key="selectCate" wx:for="{{nav}}" wx:for-item="item" data-cate="{{item.cate}}" catchtap="selectCate">
+      {{ item.name }}
+    </text>
+  </view>
+</view>
