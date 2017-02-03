@@ -23,6 +23,12 @@
         "text": "首页",
         "iconPath": "assets/1.png",
         "selectedIconPath": "assets/2.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "logs",
+        "iconPath": "assets/1.png",
+        "selectedIconPath": "assets/2.png"
       }, 
       {
         "pagePath": "pages/test/test",
