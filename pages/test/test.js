@@ -81,7 +81,7 @@ Page({
   requestPic (callback = () => {}) {
     var self = this
     wx.request({
-      url: `http://meizi.leanapp.cn/category/${self.data.category}/page/${self.data.currentPage}`,
+      url: `https://meizi.leanapp.cn/category/${self.data.category}/page/${self.data.currentPage}`,
       data: {},
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
